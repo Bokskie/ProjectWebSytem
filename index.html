@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+
+    <!-------------------------WEBSITE LOGO ICON--------------------------->
+
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.png">
+    
+
+    <!--------------------------------CSS STYLE------------------------------------->
+
+    <!----------------------------CSS USERINTERFACE STYLE--------------------------->
+    <link rel="stylesheet" type="text/css" href="./UserStyle/userInterface.css">
+
+    <!-------------------------------FONT ICONS STYLE-------------------------------->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!----------------------HOME USERINTERFACE LINK------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./UserStyle/homeUserInterf.css">
+
+    <!----------------------MENU USERINTERFACE LINK------------------------------>
+    
+    <link rel="stylesheet" type="text/css" href="./UserStyle/menuUserInterf.css">
+
+    <!----------------------FOOD RECIPES USERINTERFACE LINK------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./UserStyle/foodRecipes.css">
+
+    <!----------------------ORDER USERINTERFACE LINK------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./UserStyle/orderUserInterf.css">
+
+    <!----------------------CONTACT USERINTERFACE LINK------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./UserStyle/contactUserInterf.css">
+
+    <!-----------------------------MEDIA QUEARY CSS------------------------------>
+
+    <!-----------------------------MEDIA QUEARY CSS USER INTERFACE------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./userMediaqueary/userInterfaceMQ.css">
+
+    <!----------------------------- HOME------------------------------>
+    <link rel="stylesheet" type="text/css" href="./userMediaqueary/userHomeMQ.css">
+
+    <!----------------------------- MENU------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./userMediaqueary/userMenuMQ.css">
+
+    <!-----------------------------FOOD RECIPES------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./userMediaqueary/userRecipesMQ.css">
+
+    <!----------------------------- ORDER 
+    AREA------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./userMediaqueary/userOrderMQ.css">
+
+    <!-----------------------------CONTACT------------------------------>
+
+    <link rel="stylesheet" type="text/css" href="./userMediaqueary/userContactMQ.css">
+
+</head>
+<body>
+
+    
+
+
+    <aside class="active">
+        <div class="sidebar">
+            <div class="sidebar-branch">
+
+                <img src="./image/logo.png" width="50" height="56" alt="">
+                <h3>KAN-ANAN</h3>
+
+            </div>
+
+            <div class="sidebar-option">
+
+                <a href="#home" class="sidebar-link active"><span class="material-symbols-sharp">
+                    home
+                    </span>Home</a>
+
+                <a href="#menu"><span class="material-symbols-sharp">
+                    menu_book
+                    </span>Menu</a>
+
+                <a href="#recipe"><span class="material-symbols-sharp">
+                    border_color
+                    </span>Recipe</a>
+
+                <a href="#order"><span class="material-symbols-sharp">
+                    restaurant_menu
+                    </span>Order</a>
+
+                <a href="#contact"><span class="material-symbols-sharp">
+                    call
+                    </span>Contact</a>
+
+                <a href="adminInterface.html" class="logout"><span class="material-symbols-sharp">
+                    logout
+                    </span>LogOut</a>
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+    <header>
+        <nav>
+
+            <span class="material-symbols-sharp sidebarBtn">menu</span>
+
+            <h1>KAN-ANAN</h1>
+
+            
+
+
+            <div class="searching-area">
+                <section class="searchBar active">
+                    <input type="text" id="search" value="" onchange="searchPage()">
+                    <button>Search</button>
+                </section>
+
+                <span class="material-symbols-sharp searchBtn">search</span>
+
+            </div>
+
+            <div class="user-profile-pic">
+            <ul>
+                <li><div id="display-image"></div>
+
+                        <ul>
+
+                            <li><input type="file" id="user-image" accept="image/png, image/jpg">
+
+                            <li><label for="user-image"><span class="material-symbols-sharp">image</span>Change Profile</label>
+                                <h1>Name: User</h1>
+                                <p>ID: 47531344</p>
+                            </li>
+                            
+                            </li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+<!--------------------UP ARROW TO SCROLL UP------------------------>
+
+    <div class="scroll-up">
+        <a href="#home"><span class="material-symbols-sharp">expand_less</span></a>
+    </div>
+
+<!---------------------------------------HOME------------------------------->
+        <section class="home" id="home">
+
+        <div class="background-image">
+            <h3><span>USTP CANTEEN</span> palit namo barato ra, lami pa! mao kaon namo diri.</h3>
+
+            <div class="menu-slideshow">
+
+                <img name="slide" src="./image/beefsteak.jpg" width="300" height="400" alt="">
+
+            </div>
+
+        </div> 
+
+        <div class="background-color">
+
+            <div class="food-proverb">
+               
+                <img src="./image/foodimage.webp" alt="" width="100" height="250">
+
+            </div>
+
+
+            <div class="clickable-image">
+
+                
+                <button onclick="back()"><span class="material-symbols-sharp">arrow_back_ios</span></button>
+
+                <img id="slide2" src="./image/gif.gif" width="100" height="250" alt="">
+
+                <button onclick="next()"><span class="material-symbols-sharp">arrow_forward_ios</span></button>
+
+
+            </div>
+        </div>
+
+        </section>
+
+
+<!-------------------------------------MENU---------------------------------->
+        <section class="menu" id="menu">
+
+            <div class="menu-content">
+
+                <h2>KAN-<span>ANAN</span></h2>              
+
+                    <h4>MENU</h4>
+               
+                    <h3>DISH</h3>
+
+            <div class="menu-food">
+
+
+                    <a href="">
+                        <img src="./image/beefsteak.jpg" alt="" width="120">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Beef Steak</h4>
+                        <p>50 Pesos Per Serve</p>
+                    </a>
+          
+
+                
+                    <a href="">
+                        <img src="./image/ginataangbaboy.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Ginataang Baboy</h4>
+                        <p>70 Pesos only Per Serve</p>
+                    </a>
+              
+
+                
+                    <a href="">
+                        <img src="./image/adobongbaboy.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Adobong Baboy</h4>
+                        <p>60 Pesos only Per Serve</p>
+                    </a>
+                
+
+                
+                    <a href="">
+                        <img src="./image/tinolangisda.webp" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Tinolang Isda</h4>
+                        <p>40 Pesos only for 1 Serve</p>
+                    </a>
+                
+
+                
+                    <a href="">
+                        <img src="./image/hotsilog.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Hotsilog</h4>
+                        <p>50 Pesos only for 1 serve</p>
+                    </a>
+                
+
+                
+                    <a href="">
+                        <img src="./image/lumpia.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Lumpia</h4>
+                        <p>15 Pesos only for 1 Pieces</p>
+                    </a>
+                
+
+                
+                    <a href="">
+                        <img src="./image/tortangtalong.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Tortang talong</h4>
+                        <p>20 Pesos only for 1 Pieces</p>
+                    </a>
+                
+
+                
+                    <a href="">
+                        <img src="./image/chickencurry.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Chicken Curry</h4>
+                        <p>10 Pesos only for 1 Serve</p>
+                    </a>
+                
+
+                
+                    <a href="">
+                        <img src="./image/chickenliver.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Chicken liver</h4>
+                        <p>30 Pesos only for 1 Serve</p>
+                    </a>
+                
+
+
+            </div>
+
+            <h3>SNACKS</h3>
+
+            <div class="menu-snacks">
+
+                <a href="">
+                    <img src="./image/ubebinignit.webp" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Ube Binignit</h4>
+                    <p>10 Pesos only for 1 Serve</p>
+                </a>
+
+                <a href="">
+                    <img src="./image/junkfoods.gif" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Junk Foods</h4>
+                    <p>8 Pesos Each</p>
+                </a>
+
+                <a href="">
+                    <img src="./image/bananaque.jpg" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Bananaque</h4>
+                    <p>10 Pesos Each</p>
+                </a>
+
+                <a href="">
+                    <img src="./image/sandwich.jpg" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Sandwich</h4>
+                    <p>10 Pesos Each</p>
+                </a>
+
+                <a href="">
+                    <img src="./image/cornetto.gif" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Cornetto</h4>
+                    <p>25 Pesos Each</p>
+                </a>
+                
+                <a href="">
+                    <img src="./image/popsicle.jpg" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Popsicle Ice Cream</h4>
+                    <p>15 Pesos Each</p>
+                </a>
+
+            </div>
+
+            <h3>DRINKS</h3>
+
+            <div class="menu-drinks">
+
+                <a href="">
+                    <img src="./image/coke.jfif" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Coke</h4>
+                    <p>15 Pesos Each</p>
+                </a>
+
+
+                <a href="">
+                    <img src="./image/sprite.jpg" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Sprite</h4>
+                    <p>15 Pesos Each</p>
+                </a>
+
+
+                <a href="">
+                    <img src="./image/royal.jfif" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Royal</h4>
+                    <p>15 Pesos Each</p>
+                </a>
+
+
+                <a href="">
+                    <img src="./image/yakult.jfif" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Yakult</h4>
+                    <p>10 Pesos Each</p>
+                </a>
+
+
+                <a href="">
+                    <img src="./image/minutemaid.jfif" width="120" alt="">
+                    <h4><span class="material-symbols-sharp">
+                        favorite
+                        </span>Minute Maid Juice</h4>
+                    <p>10 Pesos Each</p>
+                </a>
+
+                
+            </div>
+
+        </div>
+
+        </section>
+
+<!--------------------------------------FOOD RECIPES--------------------------------->
+
+        <section class="foodRecps" id="recipe">
+
+            <div class="food-list">
+
+                <h1>FOOD LI<span>ST RECIPES</span></h1>
+    
+            <div class="food-recipes">
+                <ul>
+                    <li id="image1">
+                        <img src="./image/beefsteak.jpg" alt="" width="120">
+                        <h2>Beef Steak</h2>
+                        <p id="img1">350 g	Beef Steak (thin slices)
+                            ¼ cup	Grape Vinegar
+                            add	Salt
+                            2 s	Big Onions
+                            1 teaspoon	Cinnamon
+                            1 tablespo…	Curry
+                            ¼ cup	Water
+                            1 teaspoon	Mustard Powder
+                            ½ teaspoon	Black Pepper
+                            1 teaspoon	Sugar
+                            4 tablespo…	Vegetable Oil
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./image/ginataangbaboy.jpg" alt="" width="120">
+                        <h2>Ginataang Baboy</h2>
+                        <p>¼ kilogram	Pork (thinly sliced or diced, small)
+                            ½ cup	Shrimp Paste (bagoong)
+                            10 s	Finger Chilies (sliced julienned)
+                            1	Onion (peeled and thinly sliced)
+                            6 cloves	Garlic (crushed)
+                            3 tablespoons	Ginger (peeled and minced)
+                            3 cups	Coconut Milk
+                            add	Salt and Pepper (to add taste)
+                            2 tablespoons	Canola Oil</p>
+                    </li>
+                    <li>
+                        <img src="./image/adobongbaboy.jpg" alt="" width="120">
+                        <h2>Adobong Baboy</h2>
+                        <p>500 g	Pork Liempo (cut into 2-inch chunks)
+                            2 tablespoons	Oil
+                            4 cloves	Garlic
+                            200 g	Chicken Liver
+                            2 pcs	Labuyo
+                            2 pcs	Laurel Leaf
+                            1 tablespoon	Whole Peppercorn
+                            ⅓ cup	Soy Sauce
+                            ½ cup	Vinegar
+                            1 cup	Water</p>
+                    </li>
+                    <li>
+                        <img src="./image/tinolangisda.webp" alt="" width="120">
+                        <h2>Tinolang Isda</h2>
+                        <p>2 tablespoons	Canola Oil
+                            1	Medium Red Onion (peeled, quartered)
+                            1 1-inch piece	Ginger (peeled, cut into strips)
+                            4 cups	Fish Stock (or water)
+                            1	Small Green Papaya
+                            2 tablespoons	Patis (fish sauce, or to taste)
+                            4 s	Small Tanigue Steaks
+                            ½ cup	Malunggay Leaves</p>
+                    </li>
+                    <li>
+                        <img src="./image/hotsilog.jpg" alt="" width="120">
+                        <h2>Hotsilog</h2>
+                        <p>Hotsilog is a meal composed of hotdogs, garlic fried rice, and fried egg. In a Filipino household, this is commonly eaten for breakfast with a condiment of banana ketchup and some pickled shredded papaya (atchara) on the side.</p>
+                    </li>
+                    <li>
+                        <img src="./image/lumpia.jpg" alt="" width="120">
+                        <h2>Lumpia</h2>
+                        <p>3 cups	Flour
+                            3 cups	Water
+                            1 tablespoon	Salt
+                            2 pounds	Ground Pork
+                            1	Onion (whole chopped)
+                            1 stick	Carrots (grated)
+                            1 tablespoon	Garlic (minced)
+                            1	Egg
+                            1 teaspoon	Salt
+                            add	Rice Wine Vinegar
+                            1 teaspoon	Olive Oil
+                            to taste	Salt
+                            to taste	Garlic (minced)
+                            to taste	Black Pepper
+                            2 s	Hot Chiles</p>
+                    </li>
+                    <li>
+                        <img src="./image/tortangtalong.jpg" alt="" width="120">
+                        <h2>Tortang talong</h2>
+                        <p>1     Eggplant
+                            1	Egg
+                            ¼ teaspoon	Salt
+                            ⅛ teaspoon	Black Pepper (ground)
+                            ¼ cup	Oil (cooking)</p>
+                    </li>
+                    <li>
+                        <img src="./image/chickencurry.jpg" alt="" width="120">
+                        <h2>Chicken Curry</h2>
+                        <p>1 kilo chicken
+                            2 medium sized potatoes chopped
+                            1 big carrot sliced
+                            1 tbsp garlic minced
+                            3 stalks celery cut into 2 inches length
+                            1 medium onion chopped
+                            1 small red bell pepper cut into cubes
+                            2 tbsp fish sauce
+                            1 cup coconut milk
+                            2 tbsp curry powder
+                            1 thumb ginger cut into strips
+                            1 cup water</p>
+                    </li>
+                    <li>
+                        <img src="./image/chickenliver.jpg" alt="" width="120">
+                        <h2>Chicken liver</h2>
+                        <p>1 pound chicken livers - rinsed, trimmed, and patted dry
+
+                            1 ½ tablespoons olive oil
+                            
+                            2 teaspoons lemon juice
+                            
+                            ½ teaspoon salt, or to taste
+                            
+                            6 cloves garlic, minced</p>
+    
+                    </li>
+                    <li>
+                        <img src="./image/ubebinignit.webp" alt="" width="120">
+                        <h2>Ube Binignit</h2>
+                        <p>½ lb (about 3 pieces medium-size) purple yam (ube) or any sweet potatoes of choice
+                            ½ lb taro rootBinignit Ginataan Recipe 02
+                            3 pieces large ripe saba bananas
+                            2 cups (or 1 can) coconut milk
+                            1 cup packed brown sugar
+                            1 ½ cup (or 1 jar) sago in syrup or tapioca pearls in syrup
+                            ½ cup glutinous or sweet rice
+                            8 cups water</p>
+    
+                    </li>
+                    <li>
+                        <img src="./image/bananaque.jpg" alt="" width="120">
+                        <h2>Banana Que</h2>
+                        <p>10 pcs	Ripe Saba Banana (or semi-ripe)
+                            ¼ cup	Brown Sugar
+                            2 cups	Vegetable Cooking Oil
+                            10 pcs	Bamboo Skewers</p>
+    
+                    </li>
+                    <li>
+                        <img src="./image/sandwich.jpg" alt="" width="120">
+                        <h2>SandWich</h2>
+                        <p>1 pcs of slice bread
+                            Mayonnaise, Scrambled Eggs
+                        </p>
+    
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </section>
+
+<!-------------------------------------ORDER-------------------------------->
+
+        <section class="order" id="order">
+
+            <h1>ORDERING<span> AREA</span></h1>
+
+            <div class="order-area">            
+                <div class="location">
+
+
+                    <h2>KAN-ANAN is a dining room or canteen of USTP Jasaan which can be found in the USTP Jasaan Campus</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.193793161563!2d124.75235125872192!3d8.654638000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ffe437ece7fed3%3A0x528a61695fea98fd!2sUniversity%20of%20Science%20and%20Technology%20of%20Southern%20Philippines-%20Jasaan%20Campus!5e0!3m2!1sen!2sph!4v1665988842420!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="500" height="400">
+                    </iframe>
+
+                </div>
+
+                <div class="order-form">
+                    <h3><img src="./image/logo.png" width="30" height="36" alt="">Order form</h3>
+                    <form>
+                        <input type="text" placeholder="FullName">
+                        <textarea row="8" placeholder="Type your order here"></textarea>
+                        <input type="text" placeholder="Mobile Number">
+                        <input type="text" placeholder="Department">
+                        <input type="date">
+                        <button type="submit">Order</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </section>
+
+<!-----------------------------------CONTACT-------------------------------->
+
+        <section class="contact" id="contact">
+
+            <div class="user-link-option">
+
+
+<!---------------------------CONTACT FOOD MENU LINK------------------------------->
+                <div class="menu-food-indicate">
+
+                    <span class="material-symbols-sharp">google_plus_reshare<a href="#menu">OUR MENU</a></span>
+    
+                <div class="menu1">
+
+                    <h4>DISH</h4>
+
+                    <h3>Beef Steak</h3>
+                    <h3>Ginataang Baboy</h3>
+                    <h3>Adobong Baboy</h3>
+                    <h3>Tinolang Isda</h3>
+                    <h3>Hotsilog</h3>
+                    <h3>Lumpia</h3>
+                    <h3>Tortang Talong</h3>
+                    <h3>Chicken liver</h3>
+
+                </div>
+               
+                <div class="menu2">
+
+                    <h4>SNACKS</h4>
+
+                    <h3>Ube Binignit</h3>
+                    <h3>Junk Foods</h3>
+                    <h3>Bananaque</h3>
+                    <h3>Sandwich</h3>
+                    <h3>Cornetto</h3>
+                    <h3>Popsicle Ice Cream</h3>
+
+                </div>
+
+                <div class="menu3">
+
+                    <h4>DRINKS</h4>
+
+                    <h3>Coke</h3>
+                    <h3>Sprite</h3>
+                    <h3>Royal</h3>
+                    <h3>Yakult</h3>
+                    <h3>Minute Maid Juice</h3>
+
+                </div>
+                </div>
+<!--------------------------------CONTACT SOCIAL MEDIA LINK------------------------->
+
+                    <h1>CON<span>TACT</h1>
+                <div class="social-media">
+
+                    <h2>OUR LINK</h2>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            google_plus_reshare
+                            </span>FACEBOOK<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="File:Facebook Logo (2019).png - Wikipedia" data-noaft="1" style="width: 30px; height: 30px;">
+                        </a>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            google_plus_reshare
+                            </span>TWITTER<img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Download Twitter Logo Png Transparent Background - Logo Twitter Png PNG  Image with No Background - PNGkey.com" data-noaft="1" style="width: 30px; height: 30px;">
+                        </a>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            google_plus_reshare
+                            </span>INSTAGRAM<img src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Instagram logo and symbol, meaning, history, PNG" style="width: 50px; height: 30px;">
+                        </a>
+                    <a href=""><span class="material-symbols-sharp">
+                        google_plus_reshare
+                        </span>TIKTOK<img src="http://store-images.s-microsoft.com/image/apps.18774.13634052595610511.c45457c9-b4af-46b0-8e61-8d7c0aec3f56.600a0bb2-af98-4646-9d97-69cb3a90f3ce" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Microsoft Apps" data-noaft="1" style="width: 70px; height: 30px;">
+                    </a>
+                </div>
+        
+                </div>
+
+                <p>© 2022 KAN-ANA All rights reserved.</p>
+                
+        </section>
+
+
+
+    
+    </main>
+
+<!-----===========================JAVASCRIPT SECTION===========================----->
+
+
+
+<!---------------------------------USER INTERFACE FUNCTION------------------------->
+
+
+    <script src="./src/userInterface.js"></script>
+
+<!---------------------------------HOME SLIDESHOW LOOP FUNCTION------------------------->
+
+
+    <script src="./src/SlideImage.js"></script>
+
+<!---------------------------------HOME CLICKABLE IMAGE FUNCTION------------------------->
+
+
+
+    <script src="./src/ClickableImage.js"></script>
+
+
+<!---------------------------------SIDEBAR HOVER ACTIVATION CLICKABLE IMAGE FUNCTION------------------------->
+
+    <script src="./src/sidebarHover.js"></script>
+
+<!---------------------------------SIDEBAR HOVER ACTIVATION CLICKABLE IMAGE FUNCTION------------------------->
+
+    <script src="./src/userProfile.js"></script>
+
+
+<!---------------------------------SEARCH BOX FUNTION ON HEADER------------------------->
+
+    <script src="./src/SearchBox.js"></script>
+
+</body>
+</html>
