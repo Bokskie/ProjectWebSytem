@@ -1,0 +1,113 @@
+@media (min-width: 371px) and (max-width: 480px){
+    .contact
+{
+    height: auto;
+}
+.contact .user-link-option
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+.contact .user-link-option h1 
+{
+    font-size: 20px;
+}
+/*------------FOOD DISH MENU CONTACT INDICATE NAME-------------*/
+.contact .user-link-option .menu-food-indicate
+{
+    flex-direction: column;
+}
+.contact .user-link-option .menu-food-indicate h4
+{
+    font-size: 20px;
+}
+.contact .user-link-option .menu-food-indicate a
+{
+    font-size: 24px;
+}
+.contact .user-link-option .menu-food-indicate span 
+{
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+.contact .user-link-option .menu-food-indicate h3
+{
+    font-size: 12px;
+}
+/*-------------SOCIAL MEDIA LINK--------------*/
+.contact .user-link-option .social-media
+{
+    flex-direction: column;
+}
+.contact .user-link-option .social-media h2 
+{
+    font-size: 24px;
+}
+.contact .user-link-option .social-media a 
+{
+    font-size: 12px; 
+}
+.contact p
+{
+    font-size: 8px;
+}
+}
+
+/*----------------370 SCREEN SIZEEE------------*/
+
+@media (min-width: 200px) and (max-width: 370px){
+    .contact
+{
+    height: auto;
+}
+.contact .user-link-option  
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+.contact .user-link-option h1 
+{
+    font-size: 20px;
+}
+/*------------FOOD DISH MENU CONTACT INDICATE NAME-------------*/
+.contact .user-link-option .menu-food-indicate
+{
+    flex-direction: column;
+}
+.contact .user-link-option .menu-food-indicate h4
+{
+    font-size: 20px;
+}
+.contact .user-link-option .menu-food-indicate a
+{
+    font-size: 24px;
+}
+.contact .user-link-option .menu-food-indicate span 
+{
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+.contact .user-link-option .menu-food-indicate h3
+{
+    font-size: 12px;
+}
+/*-------------SOCIAL MEDIA LINK--------------*/
+.contact .user-link-option .social-media
+{
+    flex-direction: column;
+}
+.contact .user-link-option .social-media h2 
+{
+    font-size: 24px;
+}
+.contact .user-link-option .social-media a 
+{
+    font-size: 12px; 
+}
+.contact p
+{
+    font-size: 8px;
+}
+}

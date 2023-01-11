@@ -1,0 +1,80 @@
+@media (min-width: 371px) and (max-width: 480px){
+
+
+.foodRecps
+{
+    height: auto;
+}
+.foodRecps .food-list
+{
+    padding-bottom: 6rem;
+}
+.foodRecps .food-list h1 
+{
+    font-size: 22px;
+}
+.foodRecps .food-list h2
+{
+    font-size: 16px;
+}
+.foodRecps .food-list .food-recipes ul 
+{
+    gap: 2rem;
+}
+.foodRecps .food-list .food-recipes ul li 
+{
+    height: auto;
+    width: 40%;   
+    height: 60vh;
+}
+.foodRecps .food-list .food-recipes ul li img 
+{
+    width: 60%;
+    height: 14vh;
+}
+.foodRecps .food-list .food-recipes ul li p
+{
+    font-size: 12px;
+}
+}
+
+/*----------------370 SCREEN SIZEEE------------*/
+
+@media (min-width: 200px) and (max-width: 370px){
+
+
+.foodRecps
+{
+    height: auto;
+}
+.foodRecps .food-list
+{
+    padding-bottom: 6rem;
+}
+.foodRecps .food-list h1 
+{
+    font-size: 22px;
+}
+.foodRecps .food-list .food-recipes ul
+{
+    gap: 5rem;
+}
+.foodRecps .food-list .food-recipes ul li 
+{
+    height: 46vh;
+    width: 40%;   
+}
+.foodRecps .food-list .food-recipes ul li img 
+{
+    width: 60%;
+    height: 10vh;
+}
+.foodRecps .food-list .food-recipes ul li h2 
+{
+    font-size: 14px;
+}
+.foodRecps .food-list .food-recipes ul li p
+{
+    font-size: 10px;
+}
+}

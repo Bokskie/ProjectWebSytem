@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminIF Food Ordering System</title>
+
+     <!-------------------------WEBSITE LOGO ICON--------------------------->
+
+     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.png">
+    
+
+    <!-----------------ADMIN INTERFACE------------------>
+    <link rel="stylesheet" type="text/css" href="./AdminInterStyle/adminInterface.css">
+
+    <!-----------------FIRST CONTAINER------------------->
+    <link rel="stylesheet" type="text/css" href="./AdminInterStyle/firstContainer.css">
+
+    <!-----------------SECOND CONTAINER------------------>
+    <link rel="stylesheet" type="text/css" href="./AdminInterStyle/secondContainer.css">
+
+    <!-----------------THIRDCONTAINER------------------>
+    <link rel="stylesheet" type="text/css" href="./AdminInterStyle/thirdContainer.css">
+
+    <!-----------------FONT ICON STYLE------------------>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-------------------ADMING MEDIA QUEARY---------------------->
+
+    <!--------------------ADMIN INTERFACE-------------------->
+
+    <link rel="stylesheet" type="text/css" href="./adminMediaqueary/adminInterfaceMQ.css">
+
+    <!-----------------FIRST CONTAINER MEDIA QUEARY------------------->
+
+    <link rel="stylesheet" type="text/css" href="./adminMediaqueary/adminFirstcontainerMQ.css">
+
+    <!-----------------SECOND CONTAINER MEDIA QUEARY------------------->
+
+     <link rel="stylesheet" type="text/css" href="./adminMediaqueary/adminSecondcontainerMQ.css">
+
+    <!-----------------THIRDCONTAINER MEDIA QUEARY------------------->
+
+    <link rel="stylesheet" type="text/css" href="./adminMediaqueary/adminThirdcontainerMQ.css">
+</head>
+<body>
+
+<!-----------------------------SIDEBAR FUNCTION---------------------------------->
+    <aside class="aside">
+        <div class="sidebar active">
+            <div class="admin-user">
+
+                <div id="admin-image"></div>
+                <input type="file" id="user-image" accept="image/png, image/jpg">
+                <label for="user-image"><span class="material-symbols-sharp">image</span></label>
+
+            </div>
+            
+            <div class="admin-info">
+                <ul>
+                    <label id="name">ADMIN1</label>
+                    <li><h1>Account</h1></li>
+                    <li><h2>Personal Information</h2></li>
+                </ul>
+            </div>
+            <div class="sidebar-option">
+                <ul> 
+                    <li><h3>RESET PASSWORD</h3></li>
+                    <li><h3>RENAME USER</h3></li>
+                    <li><h3>EMAIL</h3></li>
+                    <li><h3>SUSPEND USER</h3></li>
+                    <li><h3>DELETE USER</h3></li>
+                    <li><span class="material-symbols-sharp">logout</span><a href="">Log-out</a>
+
+                </ul>
+            </div>
+
+            
+
+        </div>
+    </aside>
+<!-----------------------------HEADER FUNCTION---------------------------------->
+    <header>
+        <nav>
+            <span class="material-symbols-sharp sidebarBtn">menu</span>
+
+            <h1>KAN-ANAN</h1>
+
+            <h1>DASHBOARD</h1>
+
+            <img src="./image/logo.png" width="50" height="40" alt="">
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="first-container">
+
+            <div class="tabs">
+
+<!-----------------------------PROCESSING ORDER FUNCTION---------------------------------->
+                <button class="tabs_button tabs_button--active" data-for-tab="1">
+
+                    <span class="material-symbols-sharp" id="processing-order">border_color</span><h2>Processing Order</h2>
+
+                </button>
+
+                <button class="tabs_button" data-for-tab="2">
+
+                    <span class="material-symbols-sharp" id="received-order">order_approve</span><h2>Received Orders</h2>
+
+                </button>
+
+                <button class="tabs_button" data-for-tab="3">
+
+                    <span class="material-symbols-sharp" id="order">event_repeat</span><h2>Orders</h2>
+
+                </button>
+
+                <button class="tabs_button" data-for-tab="4">
+
+                    <span class="material-symbols-sharp" id="cancelled-order">draft_orders</span><h2>Cancelled Orders</h2>
+
+                </button>
+
+            </div>
+            <div class="tabs_content tabs_content--active" data-tab="1">
+            <form>
+                <div class="table-input">
+
+                    <label for="name">FullName</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="orders">Orders</label>
+                    <input type="text" name="orders" id="orders">
+
+                    <label for="mobileNumber">Mobile</label>
+                    <input type="text" name="mobileNumber" id="mobileNumber">
+
+                    <label for="department">Department</label>
+                    <input type="text" name="department"    id="dapartment">
+
+                    <label for="date">Date</label>
+                    <input type="text" name="date" id="date">
+
+                    <button>Add</button>
+                </div>
+            </form>
+                <table>
+                    <thread>
+                        <tr>
+                            <th>FullName</th>
+                            <th>Orders</th>
+                            <th>MobileNumber</th>
+                            <th>Department</th>
+                            <th>Date</th>
+                            <th><span class="material-symbols-sharp">done</span></th>
+                            <th><span class="material-symbols-sharp">close</span></th>
+                        </tr>
+                    </thread>
+                    <tbody></tbody>
+                </table>
+            </div>
+        
+            </div>
+
+<!-----------------------------RECEIVE ORDER FUNCTION---------------------------------->
+
+            <div class="tabs_content" data-tab="2">
+
+                <table width="100%">
+                    <thread>
+                        <tr>
+                            <th>FullName</th>
+                            <th>Orders</th>
+                            <th>MobileNumber</th>
+                            <th>Department</th>
+                            <th>Date</th>
+
+                        </tr>
+
+                        <tr>
+                            <td>User1</td>
+                            <td>Adobo</td>
+                            <td>09185474215</td>
+                            <td>BSIT-3A</td>
+                            <td>01/13/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User11</td>
+                            <td>Rice, Tortang Talong</td>
+                            <td>09536356733</td>
+                            <td>BSIT-2B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>User7</td>
+                            <td>Adobo, Bananaque</td>
+                            <td>09536356733</td>
+                            <td>BSMET-2B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>User14</td>
+                            <td>Bananaque, Royal</td>
+                            <td>09536356733</td>
+                            <td>BSTCM-1A</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User3</td>
+                            <td>Junk Foods, Royal</td>
+                            <td>09953235621</td>
+                            <td>BS NAME-1A</td>
+                            <td>01/11/2023</td>
+                        </tr>
+
+                    </thread>
+                    <tbody id="tbody"></tbody>
+                </table>
+
+            </div>
+
+<!-----------------------------RECENTLY ORDER FUNCTION---------------------------------->
+
+            <div class="tabs_content" data-tab="3">
+
+                <table width="100%">
+                    <thread>
+                        <tr>
+                            <th>FullName</th>
+                            <th>Orders</th>
+                            <th>MobileNumber</th>
+                            <th>Department</th>
+                            <th>Date</th>
+
+                        </tr>
+
+                        <tr>
+                            <td>User1</td>
+                            <td>Adobo</td>
+                            <td>09185474215</td>
+                            <td>BSIT-3A</td>
+                            <td>01/12/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User2</td>
+                            <td>Lumpia, Hotsilog</td>
+                            <td>09135484215</td>
+                            <td>BSIT-3B</td>
+                            <td>01/12/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User3</td>
+                            <td>Junk Foods, Royal</td>
+                            <td>09953235621</td>
+                            <td>BS NAME-1A</td>
+                            <td>01/11/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User4</td>
+                            <td>Hotsilog, Sandwich, yakult</td>
+                            <td>09353169316</td>
+                            <td>BS TCM-2A</td>
+                            <td>01/11/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User5</td>
+                            <td>Chicken Curry, Bananaque, MinuteMaid</td>
+                            <td>09536356733</td>
+                            <td>BSMET-4B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User6</td>
+                            <td>Tinolang Isda, Sandwich, Sprite</td>
+                            <td>09536356733</td>
+                            <td>BSMET-4B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User7</td>
+                            <td>Adobo, Bananaque</td>
+                            <td>09536356733</td>
+                            <td>BSMET-2B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User8</td>
+                            <td>Ube Binignit</td>
+                            <td>09536356733</td>
+                            <td>BSMET-4B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User9</td>
+                            <td>Ginataang Baboy</td>
+                            <td>09536356733</td>
+                            <td>BSNAME-4B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>User10</td>
+                            <td>Chicken Liver, Rice</td>
+                            <td>09536356733</td>
+                            <td>BSMET-1B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User11</td>
+                            <td>Rice, Tortang Talong</td>
+                            <td>09536356733</td>
+                            <td>BSIT-2B</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User12</td>
+                            <td>Chicken Liver, Rice, Coke</td>
+                            <td>09536356733</td>
+                            <td>BSTCM-1A</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User13</td>
+                            <td>Chicken Curry, Rice, Sprite</td>
+                            <td>09536356733</td>
+                            <td>BSTCM-1A</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User14</td>
+                            <td>Bananaque, Royal</td>
+                            <td>09536356733</td>
+                            <td>BSTCM-1A</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                    </thread>
+                    <tbody id="tbody"></tbody>
+                </table>
+
+            </div>
+
+<!-----------------------------CANCELED FUNCTION---------------------------------->
+
+            <div class="tabs_content" data-tab="4">
+                <table width="100%">
+                    <thread>
+                        <tr>
+                            <th>FullName</th>
+                            <th>Orders</th>
+                            <th>MobileNumber</th>
+                            <th>Department</th>
+                            <th>Date</th>
+
+                        </tr>
+
+                        <tr>
+                            <td>User2</td>
+                            <td>Lumpia, Hotsilog</td>
+                            <td>09135484215</td>
+                            <td>BSIT-3B</td>
+                            <td>01/13/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User12</td>
+                            <td>Chicken Liver, Rice, Coke</td>
+                            <td>09536356733</td>
+                            <td>BSTCM-1A</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>User13</td>
+                            <td>Chicken Curry, Rice, Sprite</td>
+                            <td>09536356733</td>
+                            <td>BSTCM-1A</td>
+                            <td>01/9/2023</td>
+                        </tr>
+
+                    </thread>
+                    <tbody id="tbody"></tbody>
+                </table>
+
+            </div>
+    
+            </section>
+
+<!-----------------------------PRODUCT SALES AND EARNINGS FUNCTION---------------------------------->
+
+        <section class="second-container">
+            
+            <div class="admin-data">
+
+                <ul>
+
+                    <li>
+                        <h1>NEW ORDERS<span class="material-symbols-sharp">calendar_month</span></h1>
+                        <p>2</p>
+                    </li>
+
+                    <li>
+                        <h1>TOTAL ORDERS<span class="material-symbols-sharp">event_available</span></h1>
+                        <p>5</p>
+                    </li>
+
+                    <li>
+                        <h1>WEEKLY USER<span class="material-symbols-sharp">groups</span></h1>
+                        <p>12</p>
+                    </li>
+
+                    <li>
+                        <h1>MONTHLY USER<span class="material-symbols-sharp">diversity_3</span></h1>
+                        <p>42</p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <section class="third-container">
+
+            <div class="admin-data">
+
+                <section class="total-earning">
+                    <h1>TOTAL EARNINGS<span class="material-symbols-sharp">payments</span></h1>
+                    <p>360<span class="material-symbols-sharp">
+                        currency_ruble
+                        </span></p>
+                </section>
+
+                <section class="monthly-earning">
+                    <h1>MONTHLY EARNINGS</h1>
+                    <p>8,000<span class="material-symbols-sharp">
+                        currency_ruble
+                        </span></p>
+                </section>
+
+            </div>
+
+        </section>
+
+        
+
+
+    </main>
+<!-----===========================JAVASCRIPT SECTION===========================----->
+
+
+
+<!---------------------------------USER INTERFACE FUNCTION------------------------->
+    <script src="./src/userInterface.js"></script>
+    
+<!---------------------------------PAGE SWITCHER FUNCTION------------------------->
+
+    <script src="./src/pageSwitcher.js"></script>
+
+<!---------------------------------TABLE ORDERS FUNCTION------------------------->
+
+    <script src="./src/tableAdmin.js"></script>
+
+<!---------------------------------RECEIVED ORDERS FUNCTION------------------------->
+
+    <script src="./src/receivedAdmin.js"></script>
+
+
+<!---------------------------------PROCESSING ORDERS FUNCTION------------------------->
+
+    <script src="./src/table2Admin.js"></script>
+
+<!---------------------------------ADMIN IMAGE FUNCTION------------------------->
+
+    <script src="./src/adminProfile.js"></script>
+    
+</body>
+</html>

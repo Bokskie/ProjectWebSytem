@@ -1,0 +1,41 @@
+.second-container
+{
+    background: #3bf3f3;
+    width: 80%;
+    position: relative;
+    top: 4rem;
+    margin: auto;
+    height: 30vh;
+    font-family: sans-serif;
+    box-shadow: 3px 1px 2px #000;
+}
+.second-container .admin-data 
+{
+    display: flex;
+    justify-content: center;
+}
+.second-container .admin-data  ul 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.second-container .admin-data  ul li 
+{
+    list-style: none;
+    background: #464646;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 4px 2px 0 #000 ;
+}
+.second-container .admin-data  ul li h1 
+{
+    font-size: 18px;
+}
+.second-container .admin-data  ul li span 
+{
+    color: #00aa6c;
+}

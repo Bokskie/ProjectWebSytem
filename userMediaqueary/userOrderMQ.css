@@ -1,0 +1,77 @@
+@media (min-width: 371px) and (max-width: 480px){
+
+.order
+{
+    height: auto;
+}
+.order .order-area
+{
+    display: flex;
+    flex-direction: column;
+}
+.order .order-area .location
+{
+    margin-left: 3rem;
+}
+.order .order-area .location h2 
+{
+    font-size: 16px;
+}
+.order .order-area .location iframe 
+{
+    width: 90%;
+}
+.order .order-area .order-form
+{
+    margin-top: 4rem;
+    width: 80%;
+    height: 90vh;
+    margin-left: 3rem;
+    margin-bottom: 6rem;
+    padding: 20px 20px 10px 20px;
+}
+.order .order-area .order-form input 
+{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-size: 12px;
+    padding: 10px;
+}
+.order .order-area .order-form textarea
+{
+    font-size: 18px;
+}
+}
+@media (min-width: 200px) and (max-width: 370px){
+.order
+{
+    height: auto;
+}
+.order .order-area
+{
+    display: flex;
+    flex-direction: column;
+}
+.order .order-area .location
+{
+    margin-left: 1rem;
+}
+.order .order-area .location h2 
+{
+    font-size: 16px;
+}
+.order .order-area .location iframe 
+{
+    width: 90%;
+}
+.order .order-area .order-form
+{
+    margin-left: 1.5rem;
+    margin-top: 4rem;
+    width: 80%;
+    height: auto;
+    margin-bottom: 6rem;
+    padding: 20px 20px 10px 20px;
+   
+}
+}

@@ -1,0 +1,49 @@
+@media (min-width: 371px) and (max-width: 480px){
+.second-container
+{
+    height: 40vh;
+}
+.second-container .admin-data  ul 
+{
+    position: relative;
+    left: 2.4rem;
+    gap: 10px;
+    margin-top: 2.4rem;
+} 
+.second-container .admin-data  ul li h1 
+{
+    font-size: 10px;
+}
+.second-container .admin-data  ul li span 
+{
+    color: #00aa6c;
+    font-size: 14px;
+}
+}
+
+@media (min-width: 200px) and (max-width: 370px){
+.second-container
+{
+        height: 30vh;
+}
+.second-container .admin-data  ul 
+{
+    position: relative;
+    left: 1.8rem;
+    margin-top: 1.8rem;
+    gap: 10px;
+} 
+.second-container .admin-data  ul li h1 
+{
+    font-size: 9px;
+}
+.second-container .admin-data  ul li p 
+{
+    font-size: 8px;
+}
+.second-container .admin-data  ul li span 
+{
+    color: #00aa6c;
+    font-size: 12px;   
+}
+}

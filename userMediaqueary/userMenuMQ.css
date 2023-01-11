@@ -1,0 +1,204 @@
+@media (min-width: 371px) and (max-width: 480px){
+.menu
+{
+    height: auto;
+}
+.menu .menu-content h2 
+{
+    font-size: 24px;
+}
+.menu .menu-content h3 
+{  
+    font-size: 22px;
+}
+.menu .menu-content h4
+{
+    font-size: 22px;
+}
+.menu .menu-content .menu-food
+{
+    gap: 1rem;
+}
+.menu .menu-content .menu-food a
+{ 
+    height: 50vh;
+    width: 140px;
+}
+.menu .menu-content .menu-food a:hover
+{
+    top: 10px;
+    position: relative;
+} 
+.menu .menu-content .menu-food h4
+{
+    font-size: 18px;
+}
+.menu .menu-content .menu-food a img
+{
+    width: 100px;
+    height: 80px;
+}
+/*-------------MENU PRICE FONT SIZE/STYLE/FONTFAMILY------------*/
+.menu .menu-content .menu-food p 
+{
+    font-size: 14px;
+}
+.menu .menu-content .menu-snacks a p 
+{
+    font-size: 14px;
+}
+.menu .menu-content .menu-drinks a p 
+{
+    font-size: 14px;
+}
+/*----------------SNACKS MENU-----------------*/
+.menu .menu-content .menu-snacks
+{
+    gap: 1rem;
+}
+.menu .menu-content .menu-snacks a 
+{
+    height: 50vh;
+    width: 140px;
+}
+.menu .menu-content .menu-snacks a span
+{
+    padding: 4px;
+}
+.menu .menu-content .menu-snacks h4
+{
+    font-size: 18px;
+}
+.menu .menu-content .menu-snacks a img
+{
+    width: 100px;
+    height: 80px;
+}
+/*----------------DRINKS MENU-----------------*/
+.menu .menu-content .menu-drinks
+{
+    gap: 1rem;
+}
+.menu .menu-content .menu-drinks a 
+{
+    height: 50vh;
+    width: 140px;
+} 
+.menu .menu-content .menu-drinks h4
+{
+    font-size: 18px;
+}
+.menu .menu-content .menu-drinks a img
+{
+    width: 100px;
+    height: 80px;
+}
+}
+
+/*----------------370 SCREEN SIZEEE------------*/
+
+@media (min-width: 200px) and (max-width: 370px){
+.menu
+{
+    height: auto;
+}
+.menu .menu-content h2 
+{
+    font-size: 24px;
+}
+.menu .menu-content h3 
+{  
+    font-size: 22px;
+}
+.menu .menu-content h4
+{
+    font-size: 22px;
+}
+/*----------------------MENU FOOD------------------*/
+.menu .menu-content .menu-food
+{
+    gap: 2rem;
+}
+.menu .menu-content .menu-food a span 
+{ 
+    font-size: 20px;
+    padding: 4px;
+}
+.menu .menu-content .menu-food a
+{ 
+    height: 50vh;
+    width: 170px;
+}
+.menu .menu-content .menu-food a img
+{
+    width: 100px;
+}
+.menu .menu-content .menu-food a:hover
+{
+    top: 10px;
+    position: relative;
+} 
+.menu .menu-content .menu-food h4
+{
+    font-size: 18px;
+}
+/*-------------MENU PRICE FONT SIZE/STYLE/FONTFAMILY------------*/
+.menu .menu-content .menu-food p 
+{
+    font-size: 14px;
+}
+.menu .menu-content .menu-snacks a p 
+{
+    font-size: 14px;
+}
+.menu .menu-content .menu-drinks a p 
+{
+    font-size: 14px;
+}
+/*----------------SNACKS MENU-----------------*/
+.menu .menu-content .menu-snacks
+{
+    gap: 2rem;
+}
+.menu .menu-content .menu-snacks a 
+{
+    height: 50vh;
+    width: 170px;
+}
+.menu .menu-content .menu-snacks h4
+{
+    font-size: 18px;
+}
+.menu .menu-content .menu-snacks a img
+{
+    width: 100px;
+}
+.menu .menu-content .menu-snacks a span 
+{ 
+    font-size: 20px;
+    padding: 4px;
+}
+/*----------------DRINKS MENU-----------------*/
+.menu .menu-content .menu-drinks
+{
+    gap: 2rem;
+}    
+.menu .menu-content .menu-drinks a 
+{
+    height: 50vh;
+    width: 170px;
+} 
+.menu .menu-content .menu-drinks a span 
+{ 
+    font-size: 20px;
+    padding: 4px;
+}
+.menu .menu-content .menu-drinks a img
+{
+    width: 100px;
+}
+.menu .menu-content .menu-drinks h4
+{
+    font-size: 18px;
+}
+}

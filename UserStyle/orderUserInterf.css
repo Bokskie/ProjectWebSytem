@@ -1,0 +1,86 @@
+.order
+{
+    background: #f3f3f3;
+    height: 140vh;
+}
+.order h1
+{
+    padding-top: 5rem;
+    text-align: center;
+    font-family: "Open Sans",Arial,sans-serif;
+}
+.order h1 span
+{
+    color: #00aa6c;
+}
+.order .order-area
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+}
+.order .order-area .location
+{
+    margin-left: 3rem;
+}
+.order .order-area .location h2 
+{
+    font-size: 20px;
+}
+.order .order-area .location iframe 
+{
+    padding-top: 1rem;
+    width: 60%;
+}
+.order .order-area .order-form
+{
+    background: #00aa6c;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 80vh; 
+    border-radius: 3rem;
+    padding: 40px; 
+    margin-right: 3rem;
+}
+.order .order-area .order-form img 
+{
+    position: relative;
+    top: 10px;
+}
+.order .order-area .order-form input 
+{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #000;
+    font-size: 16px;
+}
+.order .order-area .order-form input:hover 
+{
+    transition: all ease-out 0.5s;
+    background: #b4b4b4;
+}
+.order .order-area .order-form textarea
+{
+    width: 100%;
+    font-size: 24px;
+    height: 20vh;
+}
+.order .order-area .order-form button 
+{
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+.order .order-area .order-form form
+{
+    line-height: 3rem;
+}
+.order .order-area .order-form h3 
+{
+    text-align: center;
+    font-family: sans-serif;
+}

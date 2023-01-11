@@ -1,0 +1,61 @@
+.foodRecps
+{
+    background: #ffffff;
+    height: 300vh;
+}
+.foodRecps .food-list
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.foodRecps .food-list h1 
+{
+    padding-top: 6rem;
+    font-size: 26px;
+    font-family: sans-serif;
+}
+.foodRecps .food-list h1 span
+{
+    color: #00aa6c;
+}
+.foodRecps .food-list .food-recipes
+{
+   text-align: center;
+}
+.foodRecps .food-list .food-recipes ul
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.foodRecps .food-list .food-recipes ul li 
+{
+    background: #181818;
+    border: 5px solid #000;
+    border-radius: 3rem;
+    height: 50vh;
+    width: 20%;
+    list-style: none;
+}
+.foodRecps .food-list .food-recipes ul li img 
+{
+    width: 42%;
+    height: 18vh;
+    border-radius: 3rem;
+}
+.foodRecps .food-list .food-recipes ul li h2 
+{
+    color: #00aa6c;
+    font-family: sans-serif;  
+}
+.foodRecps .food-list .food-recipes ul li p
+{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #cacaca;
+}

@@ -1,0 +1,97 @@
+.contact
+{
+    background: #464646;
+    height: auto;
+}
+.contact .user-link-option
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+.contact .user-link-option h1 
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 26px;
+    color: #ffffff;
+    padding-top: 2rem;
+}
+.contact .user-link-option h1 span 
+{
+    color: #00aa6c;
+}
+/*------------FOOD DISH MENU CONTACT INDICATE NAME-------------*/
+.contact .user-link-option .menu-food-indicate
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.contact .user-link-option .menu-food-indicate h4
+{
+    font-family: sans-serif;
+    color: #00aa6c;
+    font-size: 22px;
+}
+.contact .user-link-option .menu-food-indicate a
+{
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #00aa6c;
+}
+.contact .user-link-option .menu-food-indicate span 
+{
+    display: flex;
+    font-size: 32px;
+}
+.contact .user-link-option .menu-food-indicate h3
+{
+    color: #d6d6d6;
+    font-family: Kristen ITC;
+    font-size: 14px;
+    margin: 5px;
+}
+/*-------------SOCIAL MEDIA LINK--------------*/
+.contact .user-link-option .social-media
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 4rem;
+}
+.contact .user-link-option .social-media h2 
+{
+    font-family: sans-serif;
+    font-size: 28px;
+    color: #00aa6c;
+}
+.contact .user-link-option .social-media a 
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+}
+.contact .user-link-option .social-media a span 
+{
+    color: #00aa6c;
+}
+.contact .user-link-option .social-media a:hover 
+{
+    background: #00aa6c;
+    border-radius: 3rem;
+    height: 8vh;
+}
+.contact p
+{
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 3rem;
+}

@@ -1,0 +1,36 @@
+@media (min-width: 371px) and (max-width: 480px){
+main .third-container .admin-data
+{
+    gap: 1rem;
+}
+main .third-container .admin-data h1 
+{
+    font-size: 10px;
+}
+main .third-container .admin-data p 
+{
+    font-size: 14px;
+}
+main .third-container .admin-data p span 
+{
+    font-size: 10px;
+}
+}
+@media (min-width: 200px) and (max-width: 370px){
+main .third-container .admin-data
+{
+    gap: 1rem;
+}
+main .third-container .admin-data h1 
+{
+    font-size: 8px;
+}
+main .third-container .admin-data p 
+{
+    font-size: 12px;
+}
+main .third-container .admin-data p span 
+{
+    font-size: 8px;
+}
+}

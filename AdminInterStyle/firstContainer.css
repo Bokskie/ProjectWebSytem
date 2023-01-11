@@ -1,0 +1,233 @@
+main .first-container
+{
+    position: relative;
+    top: 2rem;
+    margin: auto;
+    border:5px solid #00aa6c;
+    width: 80%;
+    height: 80vh;
+    overflow-y: scroll;
+}
+main .tabs 
+{
+    border: 1px solid #000;
+    display: flex;
+    width: 100%;
+}
+main .tabs_button
+{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+main .tabs_button:active
+{
+    background: #00aa6c;
+}
+main .tabs_button:not(:last-of-type)
+{   
+    border-bottom: 1px solid #00aa6c;
+}
+main .tabs_button--active
+{
+    border-right: 1px solid #00aa6c;
+    background: #00aa6c;
+}
+main .tabs_content
+{
+    padding: 10px;
+    display: none;
+}
+main .tabs_content--active
+{
+    display: block;
+}
+main .tabs_content > :first-child
+{
+    margin-top: 10px;
+}
+/*--------------ORDER PROCESSING STYLE--------------*/
+main .first-container .processing-order
+{
+    background: #ffffff;
+    width: 20%;
+    height: 14vh;
+    padding-top: 0.8rem;
+    box-shadow: 3px 1px 2px #000;
+    border-radius: 1rem;
+}
+main .first-container #processing-order 
+{
+    border-radius: 3rem;
+    background: #09ffff;
+    padding: 10px;
+}
+main .first-container [data-tab="1"] form 
+{
+    display: flex;
+}
+main .first-container [data-tab="1"] form .table-input
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+main .first-container [data-tab="1"] form label 
+{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+main .first-container [data-tab="1"] form input 
+{
+    font-size: 18px;
+    width: 200px;
+    height: 36px;
+    border-radius: 1rem;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+main .first-container [data-tab="1"] form input:hover 
+{
+    background-color: #555857d7;
+    color: #fff;
+}
+main .first-container [data-tab="1"] form button 
+{
+    width: 10%;
+    height: 30px;
+    position: relative;
+    left: 8rem;
+    border-radius: 10%;
+    background: #00aa6c;
+    cursor: pointer;
+}
+main .first-container [data-tab="1"]  table 
+{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 5px solid rgb(71, 63, 63);
+}
+main .first-container [data-tab="1"]  th
+{
+    border: 1px solid #000;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+main .first-container [data-tab="1"]  td
+{
+    border: 1px solid #000;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+main .first-container [data-tab="1"] .receiveBtn
+{
+    background: #00aa6c;
+    width: 100%;
+    cursor: pointer;
+}
+main .first-container [data-tab="1"] .cancelBtn
+{
+    background: #ff0909;
+    width: 100%;
+    cursor: pointer;
+}
+/*--------------ORDER STYLE--------------*/
+main .first-container .order
+{
+    background: #ffffff;
+    height: 14vh;
+    width: 20%;
+    padding-top: 0.8rem;
+    box-shadow: 3px 1px 2px #000;
+    border-radius: 1rem;
+}
+main .first-container #order
+{
+    border-radius: 3rem;
+    background: #fbfd6a;
+    padding: 10px;
+}
+main .first-container [data-tab="2"]  table 
+{
+    margin-top: 10px;
+    border: 5px solid rgb(71, 63, 63);
+}
+main .first-container [data-tab="2"]  th
+{
+    border: 1px solid #000;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+main .first-container [data-tab="2"]  td
+{
+    border: 1px solid #000;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+/*--------------ORDER RECEIVED STYLE--------------*/
+main .first-container .received-order
+{
+    background: #ffffff;
+    height: 14vh;
+    width: 20%;
+    padding-top: 0.8rem;
+    box-shadow: 3px 1px 2px #000;
+    border-radius: 1rem;
+}
+main .first-container #received-order
+{
+    border-radius: 3rem;
+    background: #fc6710;
+    padding: 10px;
+}
+main .first-container [data-tab="3"]  table 
+{
+    margin-top: 10px;
+    border: 5px solid rgb(71, 63, 63);
+}
+main .first-container [data-tab="3"]  th
+{
+    border: 1px solid #000;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+main .first-container [data-tab="3"]  td
+{
+    font-family: sans-serif;
+    border: 1px solid #000;
+    font-size: 18px;
+}
+/*--------------ORDER CANCELLED STYLE--------------*/
+main .first-container .cancelled-order
+{
+    background: #ffffff;
+    width: 20%;
+    height: 14vh;
+    padding-top: 0.8rem;
+    box-shadow: 3px 1px 2px #000;
+    border-radius: 1rem;
+}
+main .first-container #cancelled-order 
+{
+    border-radius: 3rem;
+    background: #ff0909;
+    padding: 10px;
+}
+main .first-container [data-tab="4"]  table 
+{
+    margin-top: 10px;
+    border: 5px solid rgb(71, 63, 63);
+}
+main .first-container [data-tab="4"]  th
+{
+    border: 1px solid #000;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+main .first-container [data-tab="4"]  td
+{
+    border: 1px solid #000;
+    font-family: sans-serif;
+    font-size: 18px;
+}

@@ -1,0 +1,45 @@
+main .third-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+main .third-container .admin-data
+{
+    display: flex;
+    gap: 10rem;
+}
+main .third-container .admin-data h1 
+{
+    font-size: 18px;
+    color: #fff;
+}
+main .third-container .admin-data p 
+{
+    color: #05ffa3;
+    font-size: 20px;
+}
+main .third-container .admin-data p span 
+{
+    font-size: 18px;
+}
+main .third-container .admin-data .total-earning, .monthly-earning
+{
+    width: 200%;
+    height: 20vh;
+    padding: 10px;
+    font-family: sans-serif;
+    text-align: center;
+}
+main .third-container .admin-data .total-earning
+{
+    background: rgb(233, 76, 238);
+    padding-top: 2rem;
+    box-shadow: 5px 4px 2px 0 rgba(131, 37, 134, 0.685);
+}
+main .third-container .monthly-earning
+{
+    background: rgb(52, 88, 248);
+    padding-top: 1.4rem;
+    box-shadow: 5px 4px 2px 0 rgba(37, 68, 207, 0.788);
+}

@@ -1,0 +1,323 @@
+@media (min-width: 371px) and (max-width: 480px){   
+
+aside.active ~ main
+{
+    width: calc(100% - 0px);
+    left: 0;
+}
+aside.active ~ header
+{   
+    width: calc(100% - 1px);
+    left: 0;
+}
+.sidebar .sidebar-option a.active
+{
+    background: #ffffff;
+    color: #000000;
+}
+/*---------Sidebar--------------*/
+aside 
+{
+    width: 130px;
+    height: 100%;
+}
+aside .sidebar .sidebar-branch h3 
+{
+    font-size: 14px;
+    font-weight: 500;
+    left: 6px;
+}
+aside .sidebar .sidebar-branch img 
+{
+    width: 30%;
+    height: 40px;
+}
+aside .sidebar .sidebar-option a
+{
+    gap: 3rem;
+    font-size: 12px;
+    font-weight: 400;
+}
+aside .sidebar .sidebar-option span 
+{
+        font-size: 22px;
+} 
+/*--------------Header--------------*/
+header
+{
+    width: calc(100% - 131px);
+    left: 131px;
+    height: auto;
+}
+header nav 
+{
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+header nav .sidebarBtn
+{
+    right: 4rem;
+    top: 10px;
+    padding: 4px;
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+}
+header nav h1 
+{
+    font-size: 16px;
+    margin-left: 2rem;
+}
+header nav .searching-area
+{
+    width: 60%;
+}
+header nav .searching-area section
+{
+    margin-left: -2rem;
+    height: 6vh;
+    padding-top: 5px; 
+    margin-top: 1rem;
+}
+header nav .searching-area input
+{
+    width: 100px;
+    height: 1rem;
+}
+header nav .searching-area button
+{
+    width: 40px;
+    height: 4vh;
+    font-size: 10px;
+}
+header nav .searching-area .searchBar.active
+{
+    width: 0;
+    left: 0;
+}
+header nav .searching-area .searchBtn
+{
+    margin-top: 1rem;
+    width: 40px;
+    height: 34px;
+    padding: 6px 0 0 9px;
+}
+header nav .user-prof
+{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    padding: 4px 0 0 4px;
+}
+/*--------------USER PROFILE STYLE--------------------*/
+header nav .user-profile-pic ul li:hover ul li
+{
+    right: 10px;
+    background: #00aa6c;
+    border-radius: 2rem;
+    width: 24%;
+    height: 16vh;
+} 
+header nav .user-profile-pic label 
+{
+    top: 10px;
+    left: 12px;
+    font-size: 10px;
+    padding: 3px;
+}
+header nav .user-profile-pic label span 
+{
+    position: relative;
+    font-size: 10px;
+    top: 1px;
+}
+header nav .user-profile-pic h1 
+{
+    top: 1px;
+    left: -10px;
+    font-size: 10px;
+}
+header nav .user-profile-pic p 
+{
+    top: 60px;
+    font-size: 10px;
+    left: 22px;
+}
+    /*-----------------Main----------------*/
+main
+{
+    width: calc(100% - 131px);
+    left: 131px;
+    top: 14vh;
+}
+main .scroll-up
+{
+    background: none;
+    top: 28rem;
+    left: 22.5rem;
+    padding: 0px;
+}
+main .scroll-up a 
+{
+    font-size: 1px;
+    color: #00aa6c;
+}
+}
+/*----------------370 SCREEN SIZEEE------------*/
+@media (min-width: 200px) and (max-width: 370px){
+
+aside.active ~ main
+{
+    width: calc(100% - 1px);
+    left: 0;
+}
+aside.active ~ header
+{   
+    width: calc(100% - 1px);
+    left: 0;
+}
+.sidebar .sidebar-option a.active
+{
+    background: #ffffff;
+    color: #000000;
+}
+/*---------Sidebar--------------*/
+aside 
+{
+    width: 130px;
+    height: 100%;
+}
+aside .sidebar .sidebar-branch h3 
+{
+    font-size: 14px;
+    font-weight: 500;
+    left: 6px;
+}
+aside .sidebar .sidebar-branch img 
+{
+    width: 30%;
+    height: 40px;
+}
+aside .sidebar .sidebar-option a
+{
+    gap: 3rem;
+    font-size: 12px;
+    font-weight: 400;
+}
+aside .sidebar .sidebar-option span 
+{
+    font-size: 22px;
+} 
+/*--------------Header--------------*/
+header
+{
+    width: calc(100% - 131px);
+    left: 131px;
+    height: auto;
+}
+header nav 
+{
+    flex-wrap: wrap;
+}
+header nav .sidebarBtn
+{
+    left: 10px;
+    top: 10px;
+    padding: 4px;
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+}
+header nav h1 
+{
+    font-size: 16px;
+    margin-left: 2rem;
+}
+header nav .searching-area
+{
+    width: 60%;
+}
+header nav .searching-area section
+{
+    margin-left: 1.6rem;
+    height: 6vh;
+    padding-top: 5px; 
+    margin-top: 1rem;
+}
+header nav .searching-area input
+{
+    width: 100px;
+    height: 1rem;
+}
+header nav .searching-area button
+{
+    width: 40px;
+    height: 4vh;
+    font-size: 10px;
+}
+header nav .searching-area .searchBar.active
+{
+    width: 0;
+    left: 0;
+}
+header nav .searching-area .searchBtn
+{
+    margin-top: 1rem;
+    width: 40px;
+    height: 34px;
+    padding: 6px 0 0 9px;
+}
+header nav .user-prof
+{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    padding: 4px 0 0 4px;
+}
+/*--------------USER PROFILE STYLE--------------------*/
+header nav .user-profile-pic ul li:hover ul li
+{
+    right: 10px;
+    background: #00aa6c;
+    border-radius: 2rem;
+    width: 24%;
+    height: 14vh;
+} 
+header nav .user-profile-pic label 
+{
+    top: 10px;
+    left: 12px;
+    font-size: 8px;
+    padding: 3px;
+}
+header nav .user-profile-pic label span 
+{
+    position: relative;
+    font-size: 10px;
+    top: 1px;
+}
+header nav .user-profile-pic h1 
+{
+    top: 1px;
+    left: -10px;
+    font-size: 8px;
+}
+header nav .user-profile-pic p 
+{
+    top: 50px;
+    font-size: 8px;
+    left: 22px;
+}
+/*-----------------Main----------------*/
+main
+{
+    width: calc(100% - 131px);
+    left: 131px;
+    top: 14vh;
+}
+    
+}

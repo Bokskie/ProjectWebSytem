@@ -1,0 +1,242 @@
+.menu
+{
+    background: #f3f3f3;
+    max-width: 100%;
+    height: 340vh;
+}
+.menu .menu-content
+{
+    text-align: center;
+    padding-top: 6rem;
+}
+.menu .menu-content h2 
+{
+    font-family: sans-serif;
+    font-size: 26px;
+}
+.menu .menu-content h2 span 
+{
+    color: #00aa6c;
+}
+.menu .menu-content h3 
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    padding-top: 30px;
+}
+.menu .menu-content h4
+{
+  
+    font-family: sans-serif;
+    font-size: 22px;
+}
+.menu .menu-content .menu-food
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 40px;
+    margin-left: 20px;
+    justify-content: center;
+    padding-bottom: 42px;
+}
+.menu .menu-content .menu-food a
+{
+    background: #20ffad;
+    padding: 20px;
+    width: 190px;
+    height: 40vh;
+    border-radius: 3rem;
+    box-shadow: #464646 6px 10px 2px 4px;
+    border: 2px solid #000000;
+}
+.menu .menu-content .menu-food a:hover
+{
+    top: 10px;
+    position: relative;
+} 
+.menu .menu-content .menu-food a img
+{
+    border-radius: 3rem;
+    color: #00aa6c;
+    box-shadow: 2px 4px 5px;
+    width: 120px;
+    height: 90px;
+}
+
+.menu .menu-content .menu-food a img:hover 
+{
+    padding: 10px;
+}
+.menu .menu-content .menu-food h4
+{
+    color: #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.menu .menu-content .menu-food h4 span
+{
+    position: relative;
+    top: 6px;
+    color: rgb(245, 0, 41);
+    background: #ffffff;
+    border-radius: 3rem;
+    padding: 5px;
+}
+.menu .menu-content .menu-food h4 span:hover 
+{
+    background: rgb(255, 0, 0);
+    color: #ffffffff;
+}
+/*-------------MENU PRICE FONT SIZE/STYLE/FONTFAMILY------------*/
+.menu .menu-content .menu-food p 
+{
+    color: #000000;
+    font-size: 16px;
+    margin-top: 1rem;
+    font-family: sans-serif;
+}
+.menu .menu-content .menu-snacks a p 
+{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.menu .menu-content .menu-drinks a p 
+{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+/*----------------SNACKS MENU-----------------*/
+.menu .menu-content .menu-snacks
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 40px;
+    margin-left: 20px;
+    justify-content: center;
+    padding-bottom: 42px;
+}
+.menu .menu-content .menu-snacks a 
+{
+    background: #eb4d1d;
+    padding: 20px;
+    width: 190px;
+    height: 40vh;
+    border-radius: 3rem;
+    box-shadow: #464646 6px 10px 2px 4px;
+    border: 2px solid #000000;
+}
+.menu .menu-content .menu-snacks a:hover
+{
+    top: 10px;
+    position: relative;
+} 
+.menu .menu-content .menu-snacks a img
+{
+    border-radius: 3rem;
+    color: #00aa6c;
+    box-shadow: 2px 4px 5px;
+    width: 120px;
+    height: 90px;
+}
+
+.menu .menu-content .menu-snacks a img:hover 
+{
+    padding: 10px;
+}
+.menu .menu-content .menu-snacks h4
+{
+    color: #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.menu .menu-content .menu-snacks h4 span
+{
+    position: relative;
+    top: 6px;
+    color: rgb(245, 0, 41);
+    background: #ffffff;
+    border-radius: 3rem;
+    padding: 5px;
+}
+.menu .menu-content .menu-snacks h4 span:hover 
+{
+    background: rgb(255, 0, 0);
+    color: #ffffffff;
+}
+.menu .menu-content .menu-snacks p 
+{
+    color: #000000;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+/*----------------DRINKS MENU-----------------*/
+
+.menu .menu-content .menu-drinks
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 40px;
+    margin-left: 20px;
+    justify-content: center;
+    padding-bottom: 42px;
+}
+.menu .menu-content .menu-drinks a 
+{
+    background: #fffb11;
+    padding: 20px;
+    width: 190px;
+    height: 40vh;
+    border-radius: 3rem;
+    box-shadow: #464646 6px 10px 2px 4px;
+    border: 2px solid #000000;
+}
+.menu .menu-content .menu-drinks a:hover
+{
+    top: 10px;
+    position: relative;
+} 
+.menu .menu-content .menu-drinks a img
+{
+    border-radius: 3rem;
+    color: #00aa6c;
+    box-shadow: 2px 4px 5px;
+    width: 120px;
+    height: 90px;
+}
+
+.menu .menu-content .menu-drinks a img:hover 
+{
+    padding: 10px;
+}
+.menu .menu-content .menu-drinks h4
+{
+    color: #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.menu .menu-content .menu-drinks h4 span
+{
+    position: relative;
+    top: 6px;
+    color: rgb(245, 0, 41);
+    background: #ffffff;
+    border-radius: 3rem;
+    padding: 5px;
+}
+.menu .menu-content .menu-drinks h4 span:hover 
+{
+    background: rgb(255, 0, 0);
+    color: #ffffffff;
+}
+.menu .menu-content .menu-drinks p 
+{
+    color: #000000;
+    font-size: 18px;
+    margin-top: 1rem;
+}
